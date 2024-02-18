@@ -39,7 +39,7 @@ final class ViewController: UIViewController {
         animator.addBehavior(collision)
         
         let behavior = UISnapBehavior(item: rectangleView, snapTo: rectangleView.center)
-        behavior.damping = 0.5
+        behavior.damping = 0.6
         animator.addBehavior(behavior)
     }
     
@@ -50,7 +50,7 @@ final class ViewController: UIViewController {
             animator.removeBehavior(behavior)
             
             let behavior = UISnapBehavior(item: rectangleView, snapTo: location)
-            behavior.damping = 0.5
+            behavior.damping = 0.6
             animator.addBehavior(behavior)
         }
     }
